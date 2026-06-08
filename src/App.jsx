@@ -16,8 +16,7 @@ import FuelTable from './components/FuelTable';
 import Register from './components/Register';
 import Login from './components/Login';
 import Footer from './components/Footer';
-import NotFound from './components/NotFound'
-import Profile from './components/Profile';
+import NotFound from './components/NotFound';
 
 // Componente principal de la aplicación
 // Este componente es el punto de entrada de la aplicación y se encarga de gestionar las rutas y el estado global de la aplicación.
@@ -70,7 +69,6 @@ function App() {
           <Route path="/registro" element={<Register />} />
           <Route path="/login" element={<Login onLogin={setUser} />} />
           <Route path="/about" element={<About />} />
-          <Route path="/perfil" element={<Profile user={user} />} />
           <Route path="/" element={<Home stations={stations} />} />
           <Route path="/mapa" element={<FuelMap stations={stations} />} />
           <Route path="/lista" element={<FuelTable stations={stations} />} />
